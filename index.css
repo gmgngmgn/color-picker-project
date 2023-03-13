@@ -78,3 +78,7 @@ main {
 #color-5{
     background-color: #A626D3;
 }
+
+.pointer-cursor {
+    cursor: pointer;
+  }

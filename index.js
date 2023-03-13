@@ -32,7 +32,30 @@ window.onload = function() {
     })
 }
 
-// document.addEventListener('click', function(event){
-//     console.log(event.target.dataset.id.)
-// })
+document.addEventListener('click', function(event){
+    if (event.target.dataset.id){
+        const textToCopy = event.target.textContent;
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            alert('Text copied to clipboard: ' + textToCopy);
+          })
+          .catch(err => {
+            alert('Could not copy text: ', err);
+          });
+    }
+});
 
+document.addEventListener('mouseover', function(event) {
+    if (event.target.dataset.id) {
+      event.target.classList.add('pointer-cursor');
+    }
+  });
+  
+  document.addEventListener('mouseout', function(event) {
+    if (event.target.dataset.id) {
+      event.target.classList.remove('pointer-cursor');
+    }
+  });
+
+
+  
