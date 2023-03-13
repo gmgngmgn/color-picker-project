@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <script src="index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <header>
+            <form>
+                <input type="color" id="color-picker" name="color-picker" value="#F55A5A">
+                <select id="select-option" name="select-option">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome Dark</option>
+                    <option value="monochrome-light">Monochrome Light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic Complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="submit-btn" type="submit">Get color scheme</button> 
+            </form>
+        </header>
+        <main class="container">
+            <div class="color-panel" id="color-1" data-id='1'></div>
+            <div class="color-panel" id="color-2"></div>
+            <div class="color-panel" id="color-3"></div>
+            <div class="color-panel" id="color-4"></div>
+            <div class="color-panel"id="color-5"></div>
+            <div class="hex" id="hex-1" data-id='1'>#F55A5A</div>
+            <div class="hex" id="hex-2">#2B283A</div>
+            <div class="hex" id="hex-3">#FBF3AB</div>
+            <div class="hex" id="hex-4">#AAD1B6</div>
+            <div class="hex" id="hex-5">#A626D3</div>
+        </main>
+    </body>
+</html>
